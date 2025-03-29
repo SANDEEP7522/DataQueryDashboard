@@ -53,7 +53,7 @@ const ApexChart = () => {
   ];
 
   return (
-    <div className="w-screen max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+    <div className="w-screen  mx-auto bg-white p-6 rounded-lg shadow-md">
       <h2 className="w-full text-xl font-semibold mb-4 text-center">
         Growth Chart
       </h2>

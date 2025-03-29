@@ -4,9 +4,9 @@ import LeftSidebar from "./components/Sidebar/LeftSidebar";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-purple-300 via-pink-300 to-yellow-100 flex justify-center items-center p-4">
+    <div className="min-h-screen bg-gradient-to-r from-purple-300 via-pink-300 to-yellow-100 flex justify-center items-center p-2">
     <div
-      className="container mx-auto p-4 flex flex-col min-h-screen 
+      className="container mx-auto p-2 flex flex-col min-h-screen  
               bg-white/30 backdrop-blur-lg border border-white/20 shadow-lg rounded-lg"
     >
     {/* Grid Layout */}

@@ -71,52 +71,51 @@ function CompactCard({ param, toggleExpand }) {
 }
 
 function ExpandedCard({ param, toggleExpand }) {
-return (
-     <motion.div
-       initial={{ opacity: 0, scale: 0.8 }}
-       animate={{ opacity: 1, scale: 1 }}
-       exit={{ opacity: 0, scale: 0.8 }}
-       transition={{ duration: 0.3, ease: "easeInOut" }}
-       className="fixed inset-0 flex items-center justify-center z-50 px-4 w-full"
-     >
-       {/* Overlay Background (Click to Close) */}
-       <div
-         className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40 w-full"
-         onClick={toggleExpand}
-       ></div>
-   
-       {/* Expanded Card Content */}
-       <motion.div
-         initial={{ y: -20, opacity: 0 }}
-         animate={{ y: 0, opacity: 1 }}
-         exit={{ y: -20, opacity: 0 }}
-         transition={{ duration: 0.3, ease: "easeInOut" }}
-         className="relative bg-white p-6 rounded-lg shadow-2xl text-black w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] max-w-5xl z-50"
-       >
-         {/* Close Button */}
-         <button
-           onClick={toggleExpand}
-           className="absolute top-3 right-3 text-gray-500 hover:text-red-500 transition duration-200 text-xl"
-         >
-           ✖
-         </button>
-   
-         <h2 className="text-xl md:text-2xl font-semibold mb-4 text-center">
-           {param.title}
-         </h2>
-   
-         {/* Responsive Chart */}
-         <div className="w-full h-[60vh] flex items-center justify-center bg-gray-100 rounded-lg">
-           <ApexChart />
-         </div>
-   
-         <p className="mt-4 text-gray-700 text-center text-sm md:text-base">
-           {param.value} in the last 24 hours
-         </p>
-       </motion.div>
-     </motion.div>
-   );
-   
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.8 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+      className="fixed inset-0 flex items-start justify-center z-50 w-full"
+    >
+      {/* Overlay Background (Click to Close) */}
+      <div
+        className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"
+        onClick={toggleExpand}
+      ></div>
+
+      {/* Expanded Card Content */}
+      <motion.div
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: -20, opacity: 0 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="relative bg-white p-6 rounded-lg shadow-2xl text-black w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] max-w-5xl z-50 mt-3"
+      >
+        {/* Close Button */}
+        <button
+          onClick={toggleExpand}
+          className="absolute top-3 right-3 text-gray-500 hover:text-red-500 transition duration-200 text-xl"
+        >
+          ✖
+        </button>
+
+        <h2 className="text-xl md:text-2xl font-semibold mb-4 text-center">
+          {param.title}
+        </h2>
+
+        {/* Responsive Chart */}
+        <div className="w-full h-[60vh] flex items-center justify-center bg-gray-100 rounded-lg">
+          <ApexChart />
+        </div>
+
+        <p className="mt-4 text-gray-700 text-center text-sm md:text-base">
+          {param.value} in the last 24 hours
+        </p>
+      </motion.div>
+    </motion.div>
+  );
 }
 
 export default Card;
