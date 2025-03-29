@@ -3,14 +3,13 @@ import { Button } from "@/components/ui/button"; // ChadCN Button
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"; // ChadCN Sidebar Drawer
 import { ShoppingCart } from "lucide-react";
 import { LeftSidebarData } from "@/Data/Data";
-import { useState } from "react";
-export default function LeftSidebar() {
 
+export default function LeftSidebar() {
   return (
     <div className="h-screen flex">
       {/* Sidebar for Large Screens */}
       <aside className="hidden md:flex flex-col w-64 text-gray-700 p-4 space-y-6">
-        <h1 className="text-xl font-bold flex items-center gap-2">
+        <h1 className="text-3xl font-bold flex items-center gap-2 animate-bounce ">
           <ShoppingCart size={34} className="text-purple-500" /> Shop
         </h1>
 

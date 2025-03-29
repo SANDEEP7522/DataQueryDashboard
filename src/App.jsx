@@ -1,4 +1,5 @@
 import "./App.css";
+import MainDash from "./components/MainDash/MainDash";
 import LeftSidebar from "./components/Sidebar/LeftSidebar";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 
       {/* Center Content */}
       <div className="md:col-span-6 p-4 bg-pink-300 text-white rounded-lg shadow-md">
-        Center Content
+      <MainDash />
       </div>
 
       {/* Right Sidebar */}
