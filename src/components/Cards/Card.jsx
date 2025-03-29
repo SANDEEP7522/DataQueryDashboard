@@ -52,6 +52,7 @@ function CompactCard({ param, toggleExpand }) {
               textColor: "#000",
               trailColor: "#00d23d",
               backgroundColor: "#fff",
+              
             })}
           />
           <span className="text-base text-gray-900 font-semibold">
@@ -77,7 +78,7 @@ function ExpandedCard({ param, toggleExpand }) {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.8 }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="fixed inset-0 flex items-start justify-center z-50 w-full"
+      className="fixed inset-0 flex items-start justify-center z-50 w-screen h-screen"
     >
       {/* Overlay Background (Click to Close) */}
       <div
@@ -91,7 +92,7 @@ function ExpandedCard({ param, toggleExpand }) {
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: -20, opacity: 0 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className="relative bg-white p-6 rounded-lg shadow-2xl text-black w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] max-w-5xl z-50 mt-3"
+        className="relative bg-white p-6 rounded-lg shadow-2xl text-black w-[100%] md:w-[80%] lg:w-[70%] xl:w-[60%] max-w-5xl z-50 mt-3"
       >
         {/* Close Button */}
         <button

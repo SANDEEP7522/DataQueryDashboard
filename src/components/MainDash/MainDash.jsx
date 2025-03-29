@@ -9,7 +9,7 @@ const MainDash = () => {
       <h1 className=" flex justify-center items-center text-gray-600 animate-pulse text-5xl font-bold mb-4">
         Dashboard
       </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {CardsData.map((data, index) => (
           <Card key={index} param={data} />
         ))}

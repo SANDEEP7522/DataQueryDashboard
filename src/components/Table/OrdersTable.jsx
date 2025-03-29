@@ -154,7 +154,6 @@ const OrdersTable = () => {
       {/* Responsive Table (Fixed) */}
       <div className="overflow-x-auto shadow-lg rounded-lg">
         <Table>
-          <TableCaption>A list of your recent invoices.</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="w-[120px]">Name</TableHead>
@@ -184,6 +183,9 @@ const OrdersTable = () => {
           </TableBody>
         </Table>
       </div>
+      <p className="flex justify-center items-center text-gray-600 text-sm mt-4 ">
+        A list of your recent invoices.
+      </p>
 
       {/* ApexCharts */}
       <div className="w-full flex justify-center mt-10">

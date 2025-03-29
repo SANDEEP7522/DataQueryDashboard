@@ -6,7 +6,7 @@ import { LeftSidebarData } from "@/Data/Data";
 
 export default function LeftSidebar() {
   return (
-    <div className="h-screen flex">
+    <div className="md:h-screen flex">
       {/* Sidebar for Large Screens */}
       <aside className="hidden md:flex flex-col w-64 text-gray-700 p-4 space-y-6">
         <h1 className="text-3xl font-bold flex items-center gap-2 animate-bounce ">
@@ -29,9 +29,10 @@ export default function LeftSidebar() {
       </aside>
 
       {/* Mobile Sidebar (Drawer) */}
+      <div className="absolute top-2 left-2 md:hidden z-50">
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="ghost" className="md:hidden p-2">
+          <Button variant="ghost" className=" p-2">
             <Menu size={24} />
           </Button>
         </SheetTrigger>
@@ -54,6 +55,7 @@ export default function LeftSidebar() {
           </nav>
         </SheetContent>
       </Sheet>
+    </div>
     </div>
   );
 }
