@@ -1,5 +1,6 @@
 import "./App.css";
 import MainDash from "./components/MainDash/MainDash";
+import { RightSidebar } from "./components/RightSidebar/RightSidebar";
 import LeftSidebar from "./components/Sidebar/LeftSidebar";
 
 function App() {
@@ -22,8 +23,8 @@ function App() {
       </div>
 
       {/* Right Sidebar */}
-      <div className="md:col-span-3 p-4 bg-yellow-300 text-white rounded-lg shadow-md">
-        Right Sidebar
+      <div className="md:col-span-3 p-1 bg-yellow-300 text-white rounded-lg shadow-md">
+        <RightSidebar />
       </div>
     </div>
   </div>

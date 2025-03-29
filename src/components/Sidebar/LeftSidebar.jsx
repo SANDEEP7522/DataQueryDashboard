@@ -12,6 +12,7 @@ export default function LeftSidebar() {
         <h1 className="text-3xl font-bold flex items-center gap-2 animate-bounce ">
           <ShoppingCart size={34} className="text-purple-500" /> Shop
         </h1>
+      <div className="w-[90%] h-[0.15px] bg-gray-400 rounded-full ml-2 animate-bounce" ></div> 
 
         <nav className="flex flex-col space-y-4">
           {LeftSidebarData.map((item, index) => (

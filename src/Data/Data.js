@@ -1,39 +1,45 @@
-
-import { Home, Clipboard, Users, Package, BarChart, LogOut } from "lucide-react";
-import { ShoppingCart, DollarSign,  TrendingUp } from "lucide-react";
+import {
+  Home,
+  Clipboard,
+  Users,
+  Package,
+  BarChart,
+  LogOut,
+} from "lucide-react";
+import { ShoppingCart, DollarSign, TrendingUp } from "lucide-react";
 
 export const LeftSidebarData = [
-    {
-        name: "Dashboard",
-        icon: Home,
-        href: "/",
-    },
-    {
-        name: "Orders",
-        icon: Clipboard,
-        href: "/orders",
-    },
-    {
-        name: "Customers",
-        icon: Users,
-        href: "/customers",
-    },
-    {
-        name: "Products",
-        icon: Package,
-        href: "/products",
-    },
-    {
-        name: "Analytics",
-        icon: BarChart,
-        href: "/analytics",
-    },
-    {
-        name: "Logout",
-        icon: LogOut,
-        href: "/logout",
-    },
-]
+  {
+    name: "Dashboard",
+    icon: Home,
+    href: "/",
+  },
+  {
+    name: "Orders",
+    icon: Clipboard,
+    href: "/orders",
+  },
+  {
+    name: "Customers",
+    icon: Users,
+    href: "/customers",
+  },
+  {
+    name: "Products",
+    icon: Package,
+    href: "/products",
+  },
+  {
+    name: "Analytics",
+    icon: BarChart,
+    href: "/analytics",
+  },
+  {
+    name: "Logout",
+    icon: LogOut,
+    href: "/logout",
+  },
+];
 
 export const CardsData = [
   {
@@ -99,5 +105,44 @@ export const CardsData = [
         data: [15, 35, 45, 55, 65, 75, 85],
       },
     ],
+  },
+];
+
+
+export const UpdatesData = [
+  {
+    id: 1,
+    img: "https://robohash.org/sandeep01", 
+    name: "John Doe",
+    message: "Placed a new order for a MacBook Pro.",
+    time: "2 mins ago",
+  },
+  {
+    id: 2,
+    img: "https://robohash.org/sandeep02", 
+    name: "Emma Watson",
+    message: "Updated her shipping address.",
+    time: "15 mins ago",
+  },
+  {
+    id: 3,
+    img: "https://robohash.org/sandeep03", 
+    name: "Michael Smith",
+    message: "Left a 5-star review on your product.",
+    time: "30 mins ago",
+  },
+  {
+    id: 4,
+    img: "https://robohash.org/sandeep04", 
+    name: "Sophia Lee",
+    message: "Requested a refund for an item.",
+    time: "1 hour ago",
+  },
+  {
+    id: 5,
+    img: "https://robohash.org/sandeep05", 
+    name: "David Johnson",
+    message: "Subscribed to your newsletter.",
+    time: "2 hours ago",
   },
 ];
